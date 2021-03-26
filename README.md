@@ -1,27 +1,26 @@
-# AngularAssignment
+Problem Statement : 
+Build a Page that contains table (populate contents from the File attached along with this email), a text input box under the label ‘Search’ and a number input box under label - ‘Adjustments’ with apply and reset buttons on it’s right side.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Development server
+Search Functionality -
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Any change in Search input should filter the table and show only the rows with column A containing the character entered in the input box. (Eg: If input is ‘Avengers’, row with Column A value ‘Avengers: Infinity War’ should be in table whereas row with Column A value ‘DC Batman’ shouldn’t be shown)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Adjustments Functionality -
 
-## Build
+Let’s call the input number as multiplier.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+User should be able to change the number in the Adjustments input box and Apply/ Reset the adjustments. 
 
-## Running unit tests
+On click of Apply, the values of column D should change to the product of column C and the multiplier for each row.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+On click of Reset, the values of column D should go back to original values from the file.
 
-## Running end-to-end tests
+Keep the default value of multiplier as  0; and if the multiplier is 0, user should not be allowed to do adjustments, but should be able to reset it.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+Commands to execute the web application
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. yarn install
+2. ng serve --port 4200
